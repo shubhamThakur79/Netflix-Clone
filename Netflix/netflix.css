@@ -1,0 +1,851 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* overflow-x: hidden; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2a2a2a;
+}
+
+header {
+
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden; */
+}
+
+.back-img {
+    overflow-clip-margin: content-box;
+    /* overflow: clip; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+header .back-img img {
+    height: 100%;
+    width: 100%;
+    /* -webkit-mask-image: linear-gradient(rgb(0, 0, 0), transparent, transparent, rgb(0, 0, 0));
+    mask-image: linear-gradient(rgb(10, 3, 3), transparent, transparent, rgb(0, 0, 0)); */
+    filter: brightness(40%);
+    -webkit-transform: scale(1.25) translateY(-11%);
+    -moz-transform: scale(1.25) translateY(-10%);
+    -ms-transform: scale(1.25) translateY(-10%);
+    transform: scale(1.25) translateY(-10%);
+}
+
+.header-content {
+    z-index: 5;
+    margin: 25px 130px;
+    position: absolute;
+    top: 0;
+    /* background-color: red; */
+    height: 90%;
+    width: 81%;
+}
+
+nav {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.logo {
+    /* background-color: aqua; */
+    height: 70px;
+    width: max-content;
+
+}
+
+nav .logo img {
+    object-fit: contain;
+    height: 85px;
+    transform: scale(1.9);
+    width: 200px;
+    margin-top: -25px;
+
+}
+
+.right-nav {
+    width: fit-content;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.right-nav select {
+    padding: 8px 13px 8px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #f7f5f5f1;
+    /* background: rgba(58, 57, 57, 0.514); */
+    border: 1px solid #807e7e94;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background: rgba(0, 0, 0, 0.514);
+    border-left: none;
+    outline: none;
+    letter-spacing: 1.5px;
+
+
+
+
+}
+
+.right-nav option {
+    background-color: rgb(15, 15, 15);
+}
+
+.lang .fa-globe {
+    color: #fff;
+   
+    font-size: 19px;
+    display: inline-block;
+    border: 1px solid #807e7e94;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 8px 5px 8px 10px;
+    position: relative;
+    top: 1px;
+    left: 4px;
+    background: rgba(0, 0, 0, 0.514);
+
+}
+
+.right-nav button {
+    background-color: #e40d18;
+    border: none;
+    padding: 2px 15px;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    height: 35px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+.header-content a .fa-greater-than{
+    color: #f1efef;
+}
+#error{
+    color: #fa020fea;
+    font-size: 18px;
+    margin-top: -20px;
+    margin-left: -520px;
+    display: none;
+}
+ .btn:focus input[email]{
+   outline: 1px solid green;
+   background-color: #2a2a2a;
+}
+.right-nav button:hover {
+    background-color: red;
+}
+
+.header-text {
+    /* background-color: aqua; */
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 55px;
+
+}
+
+.header-text h1 {
+    font-size: 55px;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    /* background-color: red; */
+}
+
+.header-text p {
+    font-size: 25px;
+    color: #FFFFE9;
+}
+
+.header-text input {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(70, 69, 69, 0.247);
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 25px;
+    margin-inline: 10px;
+    margin-top: 20px;
+}
+
+.email {
+    border: 1px solid rgb(102, 101, 101);
+
+    width: 40%;
+    border-radius: 5px;
+}
+
+.header-text .btn {
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding-right: 45px;
+    background-color: rgb(236, 14, 14);
+}
+
+.header-text i {
+    position: relative;
+    right: 45px;
+    font-weight: 100;
+    font-size: 22px;
+    padding-right: 20px;
+    /* background-color: #fff; */
+
+}
+
+#Advertisement {
+    margin: 10px 0px;
+
+    color: #FFFFFF;
+
+}
+
+.ad-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding-inline: 130px;
+    margin: 10px 0px;
+    height: 520px;
+}
+
+.ad-1 .left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 42%;
+    /* background-color: red; */
+
+}
+
+.left-div h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.left-div p {
+    font-size: 25px;
+    color: #FFFFE9;
+}
+
+.ad-1 .right-div {
+    flex-basis: 45%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+}
+
+.right-div img {
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    z-index: 6;
+    margin-top: 50px;
+}
+
+.right-div video {
+    height: 218px;
+    width: 71%;
+    z-index: 2;
+    object-fit: cover;
+    position: relative;
+    bottom: 320px;
+    left: 80px;
+}
+
+.left-div img {
+    object-fit: cover;
+    height: 400px;
+    width: 450px;
+    margin-left: 100px;
+}
+
+#h1 {
+    font-size: 50px;
+
+}
+
+.right-div h1 {
+    margin-top: 150px;
+    font-size: 55px;
+}
+
+.right-div p {
+    font-size: 25px;
+}
+
+#img-3 {
+    position: relative;
+    z-index: 10;
+}
+
+#ad-3 {
+    height: 225px;
+    width: 341px;
+    object-fit: cover;
+    position: relative;
+    bottom: 380px;
+    left: 100px;
+    border: 5px;
+}
+
+#Questions {
+    color: #FFFFE9;
+position: relative;
+background-color: black;
+}
+
+.asked-questions {
+    padding-top: 55px;
+  
+
+    padding-inline: 130px;
+}
+
+.asked-questions h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.question h2 {
+    background-color: #292828c2;
+    font-weight: 100;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    
+    padding: 10px 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out    ;
+}
+.question h2:hover{
+    background-color: rgba(129, 122, 122, 0.623);
+
+}
+
+.question .fa-solid {
+    font-size: 40px;
+    font-weight: 100;
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.question p {
+    background-color: #2b2a2ac2;
+    margin-top: -18px;
+    font-size: 20px;
+    color: #f8efefde;
+ 
+    font-family: 100;
+    padding: 15px 20px;
+   
+}
+.question .para{
+    display: none;
+    transition: all 1.5s ease-in-out;
+}
+.sign p{
+    font-size: 20px;
+    margin:25px 0px 10px 0px;
+  
+}
+.sign {
+    /* margin-top: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    /* background-color: rgb(247, 4, 154); */
+    padding: 20px; /* Added padding for spacing */
+   position: relative;
+
+}
+
+.sign input {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(70, 69, 69, 0.247);
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 25px;
+    margin-top: 10PX;
+    margin-right: 230px;
+    margin-bottom: 10px; /* Added margin bottom for spacing */
+    width: 80%; /* Set input width */
+    /* padding-right:100px; */
+     /* Set max-width if you want to limit it */
+}
+.email{
+max-width: 400px;
+}
+
+.sign .btn {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgb(248, 2, 2);
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 25px;
+    width: 50%; /* Button takes full width */
+    max-width: 200px; /* Set max-width if you want to limit it */
+    border: none; /* Remove border if necessary */
+    cursor: pointer; 
+    position: relative;
+    bottom:74px;
+    left: 325px;
+    /* position: relative; */
+}
+.sign #error{
+    position:absolute;
+top: 165px;
+left: 754px;
+    
+}
+
+.btn:hover{
+    background-color: #fc0613bb;
+    
+}
+
+.sign  .fa-greater-than{
+    /* color:red; */
+    position: relative;
+    bottom: 123px;
+    left: 280px;
+    font-size: 22px;
+    font-weight: normal;
+}
+footer{
+    margin-top: 10px;
+    padding-inline: 130px;
+    background-color: black;
+    color: rgb(134, 132, 132);
+    padding-block: 60px;
+}
+footer a{
+    color: #f1efef;
+}
+footer nav{
+    margin-top: 20px;
+    display: grid;
+    grid-row: 10px;
+    /* background-color: red; */
+    grid-template-columns: repeat(4,1fr);
+    height: 15px;
+}
+footer a:focus{
+ color: rgb(197, 8, 8);
+}
+footer .lang{
+    position: relative;
+    top: 35px;
+    height: 50px;
+  /* background-color: red; */
+
+}
+footer .lang i{
+    background: rgba(49, 49, 49, 0.514);
+
+}
+footer select{
+    padding: 8px 13px 8px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background: rgba(49, 49, 49, 0.514);
+    border: 1px solid #807e7e94;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    border-left: none;
+    outline: none;
+    letter-spacing: 1.5px;
+}
+footer select option{
+    background-color: black;
+}
+.fend {
+ /* background-color: red; */
+ margin-top: 50px;
+ font-size: 20px;
+  font-weight: 100;
+  }
+
+/* -----------------Responsive Design Here max-width:600 only------------------------------------------ */
+@media (max-width:600px ) {
+    header {
+
+        height: 110vh;
+        width: 100%;
+
+    
+    }
+    .back-img {
+        /* overflow-clip-margin: content-box; */
+        /* overflow: clip; */
+        overflow-x:none;
+        overflow-y: none;
+        height: 100%;
+        width: 100%;
+    }
+    header .back-img img {
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+    .header-content {
+        margin: 25px 30px;
+        position: absolute;
+        top: 0;
+        padding:0px 3px;
+        /* background-color: red; */
+        height: 40%;
+        width: 81%;
+    }
+    .logo {
+        /* background-color: aqua; */
+      height: max-content;
+        width: max-content;
+    
+    }
+    nav{
+        /* background-color: red; */
+        width: 100%;
+    }
+    nav .logo img {
+        object-fit: contain;
+    
+        width: 100px;
+    
+    }
+    .right-nav {
+        width: fit-content;
+        height: 30px;
+        gap: 10px;
+        /* background-color: red; */
+        margin-right: -45px;
+       
+    
+    }
+    .right-nav select {
+        padding: 4px 0px 4px 0px;
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: 1px;
+
+    }
+    .lang .fa-globe {
+      
+       
+        font-size: 14px;
+      
+        border: 1px solid #807e7e94;
+        border-right: none;
+        
+        padding:7px 0px 5px 4px;
+       
+        left: 5px;
+  
+    
+    }
+    .right-nav button {
+        padding: 2px 7px;
+    
+        height: 27px;
+    }
+    .header-text {
+        /* background-color: aqua; */
+     width: 110%;
+        top: 40%;
+        left: -0%;
+  
+        text-align: center;
+        line-height: 35px;
+    
+    }
+    .header-text h1 {
+        font-size: 30px;
+        letter-spacing: 0.5px;
+        font-weight: bolder;
+        /* background-color: red; */
+    }
+    .header-text p {
+        font-size: 20px;
+        color: #ffffffc5;
+        line-height: 40px;
+    }
+    .header-text input {
+        
+        font-size: 16px;
+        border-radius: 5px;
+      
+        padding: 13px 10px;
+  
+    }
+    .email {
+        border: 1px solid rgb(102, 101, 101);
+    
+        width: 100%;
+        border-radius: 5px;
+    }
+    .header-text .btn {
+        
+       
+        font-size: 18px;
+        padding-right: 45px;
+    }
+    
+    .header-text i {
+        position: relative;
+        right: 45px;
+        font-weight: 100;
+        font-size: 18px;
+    }
+    #Advertisement {
+        margin: -207px 0px;
+    
+        color: #FFFFFF;
+    
+    }
+    .ad-1 {
+        display: flex;
+        flex-direction: column;
+   
+    height: 600px;
+        padding-inline: 40px;
+   
+   
+    }
+    #error{
+        
+        font-size: 18px;
+        margin-top: -80px;
+        margin-left: -270px;
+        display: none;
+    }
+    .left-div h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+        margin-top: 60px;
+        
+        text-align: center;
+    }
+    
+    .left-div p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+       
+    }
+    .right-div img {
+        height: 375px;
+        width: 450px;
+        object-fit: cover;
+        position: relative;
+        left: 0px;
+        bottom: 50px;
+        right: 290px;
+        margin-top: 50px;
+    }
+    
+    .right-div video {
+        height: 202px;
+        width: 88%;
+      
+        position: relative;
+        bottom: 350px;
+        left: 43px;
+    }
+    .left-div img {
+        object-fit: cover;
+        height: 300px;
+        width: 440px;
+        margin-left: 0px;
+       position:relative;
+       top: 230px;
+    }
+    
+    #h1 {
+        font-size: 30px;
+    
+    }
+    
+    .right-div h1 {
+        margin-top: 130px;
+        font-size: 30px;
+        text-align: center;
+        position:relative;
+        bottom: 400px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .right-div p {
+        font-size: 20px;
+        position:relative;
+        bottom: 400px;
+        line-height: 40px;
+        text-align: center;
+    }
+    
+#img-3 {
+    position: relative;
+    height: 300px;
+    margin-top: 120px;
+    margin-left:-20px;
+    z-index: 10;
+   
+}
+
+#ad-3 {
+    height: 180px;
+    width: 300px;
+    
+    position: relative;
+    bottom: 345px;
+   left: 52px;
+}
+
+#Questions {
+    margin-top: 215px;
+  
+position: relative;
+background-color: black;
+}
+
+.asked-questions {
+    padding-top: 55px;
+  /* background-color: red; */
+
+    padding-inline:20px;
+}
+.asked-questions h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sign p{
+  text-align: center;
+  
+}
+.sign {
+    /* margin-top: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    /* background-color: rgb(247, 4, 154); */
+    padding: 20px; /* Added padding for spacing */
+   position: relative;
+   /* background-color: blueviolet; */
+   display: block;
+
+}
+
+.sign input {
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(70, 69, 69, 0.247);
+    margin:15px 10%;
+    
+}
+.email{
+max-width: 100%;
+padding: 5px 10px;
+}
+
+.sign .btn {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    bottom:5px;
+    left: 85px;
+    padding: 10px 0px;
+ 
+}
+.sign  .fa-greater-than{
+    /* color:red; */
+    position: relative;
+    bottom: 4px;
+    left: 8px;
+    font-size: 20px;
+    font-weight: normal;
+}
+footer{
+    margin-top: 5px;
+    padding-inline: 30px;
+    background-color: black;
+    color: rgb(134, 132, 132);
+    padding-block: 40px;
+}
+footer nav{
+    margin-top: 20px;
+    place-items: center;
+    text-align:left;
+grid-gap: 20px;
+    /* background-color: red; */
+    grid-template-columns: repeat(2,1fr);
+height: 70px;
+} 
+footer p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+footer .lang{
+    position: relative;
+    top: 35px;
+    height: 20px;
+  /* background-color: red; */
+  margin-bottom: 30px;
+
+}
+footer .lang i{
+    background: rgba(49, 49, 49, 0.308);
+    padding: 30px 10px;
+
+}
+footer select{
+  padding: 3px 4px 4px 4px;
+    font-size: 15px;
+   
+}
+.fend {
+    /* background-color: red; */
+    margin-top: 50px;
+    font-size: 15px;
+     font-weight: 100;
+     margin-top:100px;
+     padding-bottom: 50px;
+     }
+}
+  
